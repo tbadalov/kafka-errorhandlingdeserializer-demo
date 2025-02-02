@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: kafkaconsumer
+  cloud:
+    consul:
+      enabled: false
