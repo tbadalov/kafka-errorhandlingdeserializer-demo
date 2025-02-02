@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class EventListener {
 
     @KafkaListener(topics = "sms-topic")
-    public void listen(ConsumerRecord<String, String> sms) {
+    public void listen(ConsumerRecord<String, Sms> sms) {
         System.out.println("Received sms: " + sms.value());
     }
 
