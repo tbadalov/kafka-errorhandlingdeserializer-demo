@@ -1,6 +1,13 @@
 spring:
   application:
     name: kafkaconsumer
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: my-app
+      auto-offset-reset: latest
   cloud:
     consul:
       enabled: false
