@@ -8,6 +8,8 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       group-id: my-app
       auto-offset-reset: latest
+      properties:
+        spring.json.type.mapping: "Sms:com.example.kafkaconsumer.Sms"
   cloud:
     consul:
       enabled: false
