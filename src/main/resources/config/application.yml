@@ -9,6 +9,7 @@ spring:
       group-id: my-app
       auto-offset-reset: latest
       properties:
+        spring.json.value.default.type: com.example.kafkaconsumer.Sms
         spring.json.type.mapping: "Sms:com.example.kafkaconsumer.Sms"
   cloud:
     consul:
